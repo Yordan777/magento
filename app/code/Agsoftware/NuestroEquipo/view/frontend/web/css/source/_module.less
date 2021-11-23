@@ -1,0 +1,80 @@
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+@import "_module2.less";
+@import "_module1.less";
+
+
+@media (min-width: 768px) and (max-width: 2560px) {
+    .page-wrapper {
+        .columns {
+            .column {
+                .widget {
+                    font-size: @font-family;
+
+                    .contenedor_nuestroEq {
+                        display: flex;
+                        text-align: center;
+
+                        .contenedor_nuestroEq_uipo {
+                            background-color: #f9f9f9;
+
+                            span {
+
+                                display: flex;
+                                justify-content: center;
+
+                                h1 {
+                                    font-size: 5em;
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    font-size: 5em;
+                                    font-weight: 100;
+                                    position: relative;
+                                    bottom: 11px;
+                                    margin-left: 1pc;
+                                }
+                            }
+
+                            .contenedor_perfil {
+                                display: flex;
+                                margin: 1cm 15pc;
+                                text-align: left;
+
+                                img {
+                                    margin-right: 1cm;
+                                    margin-top: 20px;
+                                    border-radius: 3cm;
+                                    width: 4cm;
+                                    height: 4cm;
+                                }
+
+                                h2 {
+                                    margin-bottom: 5px;
+                                }
+
+                                hr {
+                                    border-top: 2px solid #ef3030;
+                                    margin-bottom: 20px;
+                                    margin-top: 0;
+                                    width: 35px;
+                                    margin-left: 0px;
+                                }
+
+                                a {
+                                    img {
+                                        width: 16px;
+                                        border-radius: 0;
+                                        height: 16px;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

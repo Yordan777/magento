@@ -1,0 +1,44 @@
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+@import "_module1.less";
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .page-wrapper {
+
+        .columns {
+            .column {
+                .widget {
+                    font-family: @font-family;
+
+                    .contenedor-magento {
+
+                        .contenedor-magento-img {
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .contenedor-magento-text {
+                            text-align: center;
+                            margin-top: 1cm;
+
+                            h1 {
+                                margin-bottom: 0px;
+                                font-size: 39px;
+                                font-weight: 400;
+                            }
+
+                            p {
+                                font-size: 18px;
+                            }
+
+                            span {
+                                font-size: 13px;
+                                color: #a1a1a2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

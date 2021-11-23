@@ -1,0 +1,72 @@
+// Common
+// (for styles used in both mobile and desktop views)
+& when (@media-common =true) {}
+
+// Mobile
+// (for all mobile styles.)
+.media-width(@extremum, @break) when (@extremum ='max') and (@break =@screen__m) {}
+
+// Tablet
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {}
+
+// Desktop
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__l) {}
+
+.page-wrapper {
+    .contenedor {
+        text-align: center;
+
+        .imagen {
+            display: flex;
+            width  : 200px;
+            height : 63px;
+        }
+
+        h1.titulo {
+            font-size: 61px;
+        }
+
+        p {
+            font-size: 37px;
+        }
+
+        .tamaño {
+            width : 93px;
+            height: 55px;
+        }
+
+        hr {
+            width: 88%;
+        }
+    }
+
+
+}
+
+.page-wrapper {
+    .page-main-full-width {
+        .columns {
+            .column main {
+                .contenedor {
+                    display: flex;
+                }
+
+                .fotolia img {
+                    font-size   : 123px;
+                    height      : 426px;
+                    width       : 572px;
+                    margin-right: 15px;
+                }
+
+                img {
+                    height: 296px;
+                    width : 100%;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

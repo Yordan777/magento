@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+</html>
+<style>
+    .form-cont-sk {
+        background-color: hsl(0, 0%, 90%);
+        padding: 1.5em;
+
+
+    }
+
+
+
+    .cont-sk2 {
+        column-count: 2;
+        text-align: justify;
+      
+    }
+
+    #mensaje-cliente {
+        width: 90%;
+        height: 200px;
+    }
+
+    .politicas-sk {
+        color: rgb(155, 151, 151);
+    }
+
+    #btoEnviar {
+        width: 200px;
+        height: 30px;
+        box-shadow: inset;
+    }
+</style>
+
+
+<body>
+    
+    <!-- create a form with first name last name mail-->
+    <h1>Contactenos</h1>
+    <form class="form-sk" action="https://formspree.io/f/mwkagvje" method="POST">
+        <div class="form-cont-sk">
+            <br>
+            <div class="cont-sk2">
+                <label for="nombre" class="sk-nombre">NOMBRE*</label><br>
+                <input class="sk-nombre" type="text" name="nombre" id="nombre" required> <br>
+                <label for="email" class="sk-email">EMAIL*</label> <br>
+                <input type="email" name="email" id="email" required><br>
+
+                <label for="telefono" label class="sk-telefono">TELEFONO*</label><br>
+                <input type="number" class="sk-telefono" name="numero" id="telefono" required><br>
+                <label for="empresa" class="sk-empresa">EMPRESA*</label><br>
+                <input class="sk-empresa" type="text" name="empresa" id="empresa" required><br>
+            </div>
+            <br><br>
+            <label class="sk-mensaje" for="mensaje">MENSAJE*</label><br>
+            <textarea class="sk-mensaje" type="tel" name="mensaje-cliente" required></textarea>
+            <br>
+
+            <div class="sk-resultado">
+
+                <p> Campos es obligatorio*</p>
+                <input type="checkbox" name="terminos" id="terminos" required><label class="politicas-sk"
+                    for="terminos">Acepto la poitica de
+                    tratamiento
+                    de datos</label>
+                <p>Politicas de la poitica de tratamiento de datos</p>
+
+                <input id="btoEnviar" type="submit" value="ENVIAR MENSAJE">
+                <br><br>
+
+            </div>
+
+    </form>
+</body>
+
+</html>

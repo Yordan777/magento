@@ -1,0 +1,123 @@
+@primary-color: rgb(0, 101, 255);
+@secound-color: #796eff;
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+@import "_module3.less";
+@import "_module2.less";
+@import "_module1.less";
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 3000px) {
+    .page-wrapper {
+      .columns {
+          .column {
+
+              .widget {
+                  font-family: @font-family;
+                  height: 454px;
+
+                  .container-banner {
+
+                      .slider {
+                          width: 100%;
+                          height: 16cm;
+                          overflow: hidden;
+
+                          ul {
+                              /*opacity: .89;
+                                filter: blur(1px);*/
+                              display: flex;
+                              padding: 0;
+                              width: 100%;
+
+                              animation: cambio 20s infinite;
+
+                              img {
+                                  max-width: 100%;
+                                  height: auto;
+                                  border: 0;
+                              }
+                          }
+
+                          li {
+                              margin-left: 2%;
+                              list-style: none;
+                          }
+
+                          @keyframes cambio {
+                              0% {
+                                  margin-left: 0;
+                              }
+
+                              20% {
+                                  margin-left: 0;
+                              }
+
+                              25% {
+                                  margin-left: -100%;
+                              }
+
+                              45% {
+                                  margin-left: -100%;
+                              }
+
+                              50% {
+                                  margin-left: -200%;
+                              }
+
+                              70% {
+                                  margin-left: -200%;
+                              }
+
+                              // 75%{margin-left: -300%;}
+                              // 100%{margin-left: -300%;}
+                          }
+
+                      }
+                  }
+
+                  .container-banner-background {
+                      background: linear-gradient(0deg, #796eff, transparent);
+                      width: 100%;
+                      height: 16cm;
+                      position: relative;
+                      bottom: 189mm;
+
+                      .container-banner-background-text {
+                          margin: 0cm 0cm 0cm 8cm;
+                          position: relative;
+                          left: -7cm;
+                          top: 4cm;
+
+
+                          h1 {
+                              font-weight: 600;
+                              font-size: 50px;
+                              color: black;
+                          }
+
+                          p {
+                              font-weight: 100;
+                              font-size: 14px;
+                          }
+
+                          .boton-primario {
+                              background-color: @primary-color;
+                              color: white;
+                          }
+
+                          .boton-segundario {
+                              border-color: @primary-color;
+                              color: @primary-color;
+                              background-color: white;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

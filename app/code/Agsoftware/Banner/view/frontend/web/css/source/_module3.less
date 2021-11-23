@@ -1,0 +1,115 @@
+
+@media (min-width: 558px) and (max-width: 639px) {
+
+    .page-wrapper {
+        .columns {
+            .column {
+                .widget {
+                    font-family: @font-family;
+                    height: 565px;
+
+                    .container-banner {
+
+                        //  margin: 0px 2pc;
+                        .slider {
+                            width: 100%;
+                            margin: auto;
+                            overflow: hidden;
+
+                            ul {
+                                display: flex;
+                                padding: 0;
+                                width: 100%;
+
+                                animation: cambio 20s infinite alternate;
+
+                                img {
+                                    height: 455px;
+                                    border: 0;
+                                    width: 655px;
+                                    margin-left: 0px;
+                                    border-radius: 0px;
+                                    margin-bottom: 0px;
+                                }
+                            }
+
+                            li {
+                                margin-left: 2%;
+                                list-style: none;
+                            }
+
+                            @keyframes cambio {
+                                0% {
+                                    margin-left: 0;
+                                }
+
+                                20% {
+                                    margin-left: 0;
+                                }
+
+                                25% {
+                                    margin-left: -100%;
+                                }
+
+                                45% {
+                                    margin-left: -100%;
+                                }
+
+                                50% {
+                                    margin-left: -200%;
+                                }
+
+                                70% {
+                                    margin-left: -200%;
+                                }
+
+                                // 75%{margin-left: -300%;}
+                                // 100%{margin-left: -300%;}
+                            }
+
+                        }
+
+                    }
+
+                    .container-banner-background {
+                        background: linear-gradient(35deg, #796eff, transparent);
+                        width: 100%;
+                        height: 12cm;
+                        position: relative;
+                        bottom: 479px;
+
+                        .container-banner-background-text {
+                            margin: 0cm 1cm;
+                            position: absolute;
+                            right: 4cm;
+                            top: 2cm;
+
+                            h1 {
+                                font-weight: 600;
+                                color: black;
+                                font-size: 40px;
+                            }
+
+                            p {
+                                font-weight: 100;
+                            }
+
+                            .boton-primario {
+                                background-color: @primary-color;
+                                color: white;
+                                width: 9em;
+
+                            }
+
+                            .boton-segundario {
+                                border-color: @primary-color;
+                                color: @primary-color;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
